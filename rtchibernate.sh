@@ -2,7 +2,10 @@
 # Script name: /usr/lib/systemd/system-sleep/rtchibernate.sh
 
 timestamp=$(date +%s)
+
+# Set time in seconds on your personal preference.
 autohibernate="1200" ## 20 minutes
+
 echo "$timestamp $1" >> /tmp/autohibernate.log
 
 if [ "$1" = "pre" ]
@@ -24,4 +27,3 @@ then
         rtcwake -m no -s 1
     fi
 fi
-
