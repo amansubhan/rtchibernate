@@ -1,4 +1,5 @@
 #!/bin/bash
+# Find updates on https://github.com/amansubhan/rtchibernate
 # Script name: /usr/lib/systemd/system-sleep/rtchibernate.sh
 
 timestamp=$(date +%s)
